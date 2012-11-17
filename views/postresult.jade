@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    include header
+
+    div.content
+        div.main
+
+            div#result #{result}
+
+            form(name='write-room', method='post')
+
+                fildeset
+                    input(type='hidden', name='title', value='#{title}')
+                    input(type='hidden', name='body', value='#{body}')
+    include footer

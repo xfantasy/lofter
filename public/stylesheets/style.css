@@ -1,0 +1,246 @@
+/** basic */
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  line-height: 150%;
+  background: url(/images/bg.jpg) #eeeeee repeat 50% 50%;
+}
+a {
+  color: #00B7FF;
+}
+ul li {
+  list-style: none;
+}
+.fn-clear:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.fn-clear {
+  zoom: 1;
+}
+.fn-left {
+  float: left;
+}
+.fn-right {
+  float: right;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol,
+dl {
+  margin: 0;
+  padding: 0;
+}
+/** basic -- end */
+/** style library */
+/** style library --end */
+/** header */
+header {
+  height: 80px;
+  background-color: #2d3337;
+  text-align: center;
+}
+header #header {
+  position: relative;
+  margin: 0 auto;
+  width: 960px;
+  text-align: left;
+  color: #eee;
+}
+header #header h1 {
+  background-color: #fff;
+  color: #2d3337;
+  padding: 10px 20px;
+  display: inline-block;
+  font-family: 'Anaheim', sans-serif;
+  line-height: 60px;
+  height: 70px;
+  vertical-align: middle;
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1);
+}
+header #header h1:first-letter {
+  font-size: 48px;
+}
+header #header nav#main-menu {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  display: inline;
+}
+header #header nav#main-menu ul li {
+  list-style: none;
+  display: inline;
+  margin-right: 20px;
+}
+header #header nav#main-menu ul li a {
+  font-family: 'Anaheim', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #eee;
+  text-decoration: none;
+  text-shadow: 0 2px 1px #000;
+}
+header #header nav#main-menu ul:last-child {
+  margin-right: 0;
+}
+/** header -- end */
+/** content **/
+.content {
+  margin: 30px auto 0;
+  text-align: left;
+  width: 960px;
+}
+.content .main {
+  text-align: left;
+  width: 670px;
+  margin-right: 10px;
+}
+.content .sidebar {
+  width: 270px;
+  margin-left: 10px;
+}
+/** content -- end */
+/** toolbar */
+.content .main ul.toolbar {
+  display: inline-block;
+  background-color: #fff;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.content .main ul.toolbar li {
+  display: inline-block;
+  width: 133px;
+  height: 110px;
+  text-align: center;
+  font-size: 16px;
+  border-right: 1px solid #eee;
+}
+.content .main ul.toolbar li a {
+  width: 133px;
+  height: 35px;
+  padding-top: 75px;
+  color: #666;
+  text-decoration: none;
+  display: block;
+}
+.content .main ul.toolbar li a:hover {
+  display: block;
+  box-shadow: inset 2px 2px 7px rgba(0, 0, 0, 0.1);
+}
+.content .main ul.toolbar:last-child {
+  border-right: none;
+}
+/** toolbar -- end */
+/** sidebar */
+.content aside.sidebar .sidebarmenu {
+  background-color: #fff;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  margin: 20px 0;
+  padding: 0;
+  text-shadow: 0 1px 1px #fff;
+}
+.content aside.sidebar .sidebarmenu li {
+  border-bottom: 1px solid #eee;
+}
+.content aside.sidebar .sidebarmenu li a {
+  display: block;
+  padding: 0 10px 0 20px;
+  height: 32px;
+  line-height: 32px;
+  color: #888;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.content aside.sidebar .sidebarmenu li a:hover {
+  background-color: #f6f6f6;
+}
+.content aside.sidebar .sidebarmenu li:last-child {
+  border-bottom: none;
+}
+.content aside.sidebar .sidebarmenu:first-child {
+  margin-top: 0;
+}
+.content aside.sidebar .sidebarmenu:last-child {
+  margin-bottom: 0;
+}
+/** sidebar -- end */
+/** article */
+.main article {
+  margin-top: 20px;
+}
+.main article summary {
+  background-color: #fff;
+  width: 100px;
+  margin-right: 10px;
+  text-align: center;
+  color: #999;
+  height: 80px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+.main article summary span.name {
+  font-size: 14px;
+  display: block;
+  width: 100px;
+}
+.main article summary span.date {
+  font-size: 10px;
+}
+.main article section {
+  background-color: #fff;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  width: 520px;
+  padding: 16px 20px;
+  color: #666;
+}
+.main article section h1 {
+  font-size: 20px;
+}
+/** article --end */
+/** footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+  box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.3);
+  width: 340px;
+  padding: 10px;
+}
+footer nav {
+  display: inline;
+}
+footer nav ul {
+  display: inline;
+}
+footer nav ul li {
+  margin-right: 8px;
+  display: inline;
+}
+footer nav ul li a {
+  text-decoration: none;
+}
+footer .copyright {
+  font-size: 11px;
+  color: #999;
+}
+/** footer -- end */
+/** post form */
+/** post form -- end */

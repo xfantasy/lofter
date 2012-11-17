@@ -1,0 +1,290 @@
+/** basic */
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    padding:0;
+    margin: 0;
+    width: 100%;
+    line-height: 150%;
+    background: url(/images/bg.jpg) #eee repeat 50% 50%;
+}
+a {
+    color: #00B7FF;
+}
+ul li {
+    list-style: none;
+}
+
+.fn-clear:after{
+    visibility:hidden;
+    display:block;
+    font-size:0;
+    content:" ";
+    clear:both;
+    height:0
+}
+.fn-clear{
+    zoom:1;
+}
+.fn-left{
+    float: left;
+}
+.fn-right{
+    float: right;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7{
+    margin: 0;
+    padding: 0;
+}
+ul,
+ol,
+dl{
+    margin: 0;
+    padding: 0;
+}
+
+/** basic -- end */
+
+/** style library */
+/** style library --end */
+
+/** header */
+header{
+    height: 80px;
+    background-color: #2d3337;
+    text-align: center;
+    #header{
+        position: relative;
+        margin: 0 auto;
+        width: 960px;
+        text-align: left;
+        color: #eee;
+        h1{
+            background-color: #fff;
+            color: #2d3337;
+            padding: 10px 20px;
+            display: inline-block;
+            font-family: 'Anaheim', sans-serif;
+            line-height: 60px;
+            height: 70px;
+            vertical-align: middle;
+            font-size: 38px;
+            font-weight: 700;
+            text-align:center;
+        box-shadow: 0 2px 7px rgba(0,0,0, 0.1);
+            &:first-letter{
+                font-size: 48px;
+            }
+        }
+        nav#main-menu{
+            position: absolute;
+            bottom: 30px;
+            right: 0;
+            display: inline;
+            ul{
+                li{
+                    list-style: none;
+                    display: inline;
+                    margin-right: 20px;
+                    a{
+                        font-family: 'Anaheim', sans-serif;
+                        font-weight: 600;
+                        font-size: 16px;
+                        color: #eee;
+                        text-decoration: none;
+                        text-shadow: 0 2px 1px #000;
+                        span{
+
+                        }
+                    }
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+/** header -- end */
+
+/** content **/
+.content{
+    margin: 30px auto 0;
+    text-align: left;
+    width: 960px;
+    .main{
+        text-align: left;
+        width: 670px;
+        margin-right: 10px;
+    }
+    .sidebar{
+        width: 270px;
+        margin-left: 10px;
+    }
+}
+/** content -- end */
+
+/** toolbar */
+.content{
+    .main{
+        ul.toolbar{
+            display: inline-block;
+            background-color: #fff;
+            box-shadow: 1px 1px 3px rgba(0,0,0, 0.3);
+            li{
+                display: inline-block;
+                width: 133px;
+                height: 110px;
+                text-align: center;
+                font-size: 16px;
+                border-right: 1px solid #eee;
+                a{
+                width: 133px;
+                height: 35px;
+                    padding-top: 75px;
+                    color: #666;
+                    text-decoration: none;
+                    display: block;
+                }
+                a:hover {
+                    display: block;
+                    box-shadow: inset 2px 2px 7px rgba(0, 0, 0, 0.1);
+                }
+            }
+            &:last-child{
+                border-right: none;
+            }
+        }
+    }
+}
+/** toolbar -- end */
+
+/** sidebar */
+.content{
+    aside.sidebar {
+        .sidebarmenu {
+            background-color: #fff;
+            box-shadow: 1px 1px 3px rgba(0,0,0, 0.3);
+            margin: 20px 0;
+            padding: 0;
+            text-shadow: 0 1px 1px #fff;
+            li{
+                border-bottom: 1px solid #eee;
+                a{
+                    display: block;
+                    padding: 0 10px 0 20px;
+                    height: 32px;
+                    line-height: 32px;
+                    color: #888;
+                    text-decoration: none;
+                    vertical-align: middle;
+                }
+                a:hover{
+                    background-color: #f6f6f6;
+                }
+            }
+            li:last-child{
+                border-bottom: none;
+            }
+        }
+        .sidebarmenu:first-child{
+            margin-top: 0;
+        }
+        .sidebarmenu:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+/** sidebar -- end */
+
+/** article */
+.main{
+    article{
+        margin-top: 20px;
+        summary{
+            background-color: #fff;
+            width: 100px;
+            margin-right: 10px;
+            text-align: center;
+            color: #999;
+            height: 80px;
+            box-shadow: 1px 1px 3px rgba(0,0,0, 0.3);
+            span.name{
+                font-size: 14px;
+                display: block;
+                width: 100px;
+            }
+            span.date{
+                font-size: 10px;
+            }
+        }
+        section{
+            background-color: #fff;
+            box-shadow: 1px 1px 3px rgba(0,0,0, 0.3);
+            width: 520px;
+            padding: 16px 20px;
+            color: #666;
+            h1{
+                font-size: 20px;
+            }
+            p{
+            }
+        }
+    }
+    article:first-child{
+
+    }
+}
+/** article --end */
+
+/** footer */
+footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: -1px -1px 3px rgba(0,0,0, 0.3);
+    width: 340px;
+    padding: 10px;
+    nav{
+        display: inline;
+        ul{
+            display: inline;
+            li{
+                margin-right: 8px;
+                display: inline;
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .copyright{
+        font-size: 11px;
+        color: #999;
+    }
+}
+/** footer -- end */
+
+/** post form */
+/** post form -- end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+

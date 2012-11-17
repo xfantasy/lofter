@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    include header
+
+    div.content.fn-clear
+        div.main.fn-left
+            include toolbar
+
+            -for(var i = 0, l = 5; i<= l; i++)
+                article.fn-clear
+                    summary.fn-left
+                        span.name twt
+                        time 2012.11.17
+                    section.fn-right
+                        h1 I loved summer day.
+                        p this is a post form cell phone. this is a post form cell phone.this is a post form cell phone.this is a post form cell phone.this is a post form cell phone.this is a post form cell phone.this is a post form cell phone.this is a post form cell phone.
+                        p this is a post form cell phone. this is a post form cell phone.this is a post form cell phone.this is a post form cell phone.this is a post form cell phone.this is a post form cell phone.this is a post form cell phone.this is a post form cell phone.
+                        p this is a post form cell phone. this is a post form cell phone.this is a post form cell phone.this is a post form cell phone.this is a post form cell phone.this is a post form cell phone.this is a post form cell phone.this is a post form cell phone.
+
+        include sidebar
+
+    include footer
